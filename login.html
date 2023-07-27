@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>로그인 | LOGO</title>
+
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/menubar.css">
+    
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="max-width">
+            <!-- menu-nav -->
+            <nav class="menu-nav">
+                <form class="menu-group">
+                    <input type="text" placeholder="Search">
+                    <div class="menu-search"></div>
+                </form>
+        
+                <a href="" class="logo">LOGO</a>
+        
+                <div class="toggle">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- aside -->
+    <aside class="menu-aside">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li><a href="#"><i class="fa-solid fa-star"></i> 공지사항</a></li>
+            <li><a href="#"><i class="fa-solid fa-rocket"></i> 인기퀴즈</a></li>
+            <li><a href="#"><i class="fa-solid fa-fire"></i> 인기게시글</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question"></i> 퀴즈게시판</a></li>
+            <li><a href="#"><i class="fa-solid fa-square-pen"></i> 자유게시판</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-user"></i> 마이페이지</a></li>
+        </ul>
+
+        <div class="aside-signin">
+            <a href="./login.html" class="signin-login">로그인</a>
+            <span>|</span>
+            <a href="./join.html" class="signin-join">회원가입</a>
+        </div>
+    </aside>
+
+    <!-- login -->
+    <div class="login-box">
+        <h2>로그인</h2>
+
+        <form>
+            <div class="user-box">
+                <input type="email" required>
+                <label>ID</label>
+            </div>
+
+            <div class="user-box">
+                <input type="password" required>
+                <label>PASSWORD</label>
+            </div>
+
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                로그인
+            </a>
+        </form>
+
+        <div class="login-link">
+            <div class="search">
+                <img src="./icons/icon-lock.png">
+                <a href="./find-id.html">아이디</a>
+                <span>|</span>
+                <a href="./find-pw.html">비밀번호찾기</a>
+            </div>
+
+            <a href="./join.html">
+                <img src="./icons/icon-user.png">회원가입
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        &copy; QUIZINITY 2023 GREENBEE
+    </footer>
+
+</body>
+
+</html>
