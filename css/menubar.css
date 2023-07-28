@@ -103,8 +103,9 @@ body:has(.nav-toggle:checked) .menu-bar:nth-of-type(3) {
     z-index: 4;
 }
 
-.logo {
-    color: white;
+.logo img {
+    width: 100px;
+    height: auto;
 }
 
 .menu-group > input {
