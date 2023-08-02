@@ -1,5 +1,12 @@
 # 2023 GREENBEE PROJECT
 
+## ⭐️ commit message
+
+```
+commit시 message는 'gitmoji (날짜) 내용'으로 작성
+ex) 💡 (0802) aside menu 주석 추가
+```
+
 ## ⭐️ commit gitmoji 규칙
 
 **commit의 목적이나 의도를 쉽게 식별하기 위함**
@@ -16,11 +23,4 @@ commit 이모티콘 규칙
 ✅ | :white_check_mark: | 테스트 추가/수정
 💡 | :bulb: | 주석 추가/수정
 
-```
-
-## ⭐️ commit message
-
-```
-commit시 message는 'gitmoji (날짜) 내용'으로 작성
-ex) 💡 (0802) aside menu 주석 추가
 ```
