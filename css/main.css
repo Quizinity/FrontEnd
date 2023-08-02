@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ------ reset ------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard-Regular';
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    border: none;
+    background: none;
+}
+
+button:enabled {
+    cursor: pointer;
+}
+
+/* ------ main ------  */
+.main-wrapper {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "notice notice"
+    "pquiz ppost"
+    ;
+    grid-template-rows: 1fr 2fr;
+}
+
+.main-notice div {
+    border-radius: 5px;
+}
+
+.main-notice {
+    padding: 20px;
+    box-shadow: inset 5px 5px 5px 5px orange;
+
+    grid-area: notice;
+}
+
+.main-pop-quiz {
+    padding: 20px;
+    background-color: aqua;
+
+    grid-area: pquiz;
+}
+
+.main-pop-post {
+    padding: 20px;
+    background-color: beige;
+
+    grid-area: ppost;
+}
+
+/* 749px부터 적용 */
+@media (min-width: 749px) {
+    .main-wrapper {
+        grid-template-areas:
+        "notice notice"
+        "pquiz ppost"
+        ;
+    }
+}
+
+/* 748까지 적용 */
+@media (max-width: 749px) {
+    .main-wrapper {
+        grid-template-areas:
+        "notice"
+        "pquiz"
+        "ppost"
+        ;
+    }
+}
