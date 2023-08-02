@@ -53,31 +53,44 @@ button:enabled {
     grid-template-rows: 1fr 2fr;
 }
 
-.main-notice div {
+.main-notice, .main-pop-post, .main-pop-quiz {
     border-radius: 5px;
+    background-color: #fff;
 }
 
+.main-title {
+    font-size: 1.2em;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #c0c0c0
+}
+
+/* ------ notice ------ */
 .main-notice {
     padding: 20px;
-    box-shadow: inset 5px 5px 5px 5px orange;
+    /* background-color: orange; */
 
     grid-area: notice;
 }
 
+/* ------ popular quiz ------ */
 .main-pop-quiz {
     padding: 20px;
-    background-color: aqua;
+    /* background-color: aqua; */
 
     grid-area: pquiz;
 }
 
+/* ------ popular post ------ */
 .main-pop-post {
     padding: 20px;
-    background-color: beige;
+    /* background-color: beige; */
 
     grid-area: ppost;
 }
 
+
+/* ------ media query ------ */
 /* 749px부터 적용 */
 @media (min-width: 749px) {
     .main-wrapper {
