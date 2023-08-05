@@ -49,7 +49,6 @@ button:enabled {
 /* ------ main ------  */
 .main-wrapper {
     width: 100%;
-    padding: 20px;
     background-color: transparent;
     /* display: grid;
     grid-template-areas:
@@ -60,6 +59,7 @@ button:enabled {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    transform: translateX(-2%);
 }
 
 .main-notice, .main-pop-post, .main-pop-quiz {
@@ -111,16 +111,21 @@ button:enabled {
     /* grid-area: pquiz; */
 }
 
-.thumbnail-box {
-    margin: 15px;
-}
-
+/* .main-pop-quiz > ul { */
 .pquiz-list {
-    width: 288px;
+    min-width: 288px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-width: 288px;
+    /* flex: 1; */
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink; */
+}
+
+.thumbnail-box {
+    margin: 15px;
 }
 
 .pquiz-list > li, .pquiz-thumbnail {
@@ -129,7 +134,7 @@ button:enabled {
 }
 
 .pquiz-list > li {
-    width: 100%;
+    width: 288px;
     margin-bottom: 10px;
 }
 
@@ -162,6 +167,7 @@ button:enabled {
 }
 
 .ppost-list .ppost-num {
+    width: 80px;
     margin: 0 10px;
 }
 
@@ -170,6 +176,8 @@ button:enabled {
 }
 
 .ppost-list .ppost-view {
+    width: 80px;
+    text-align: right;
     margin: 0 20px;
 }
 

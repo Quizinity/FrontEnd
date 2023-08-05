@@ -239,6 +239,11 @@ button:enabled {
     }
 }
 
+.join-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /* ------ login-link ------ */
 .login-link {
     width: 100%;

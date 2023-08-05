@@ -101,10 +101,11 @@ body:has(.nav-toggle:checked) .menu-bar:nth-of-type(3) {
     align-items: center;
     position: relative;
     z-index: 4;
+    margin-top: -10px;
 }
 
 .logo img {
-    width: 100px;
+    width: 130px;
     height: auto;
 }
 
@@ -200,7 +201,7 @@ body:has(.nav-toggle:checked) .menu-bar:nth-of-type(3) {
     position: fixed;
     top: 17%;
     bottom: 10%;
-    right: -300px;
+    right: -400px;
     height: auto;
     width: 300px;
     background-color: #252636;
