@@ -39,18 +39,27 @@ button:enabled {
     cursor: pointer;
 }
 
+/* ------ 말줄임 표시 ------ */
+.ell1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* ------ main ------  */
 .main-wrapper {
     width: 100%;
     padding: 20px;
     background-color: transparent;
-    display: grid;
-    gap: 20px;
+    /* display: grid;
     grid-template-areas:
     "notice notice"
     "pquiz ppost"
     ;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 2fr; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .main-notice, .main-pop-post, .main-pop-quiz {
@@ -67,47 +76,116 @@ button:enabled {
 
 /* ------ notice ------ */
 .main-notice {
+    width: 100%;
     padding: 20px;
-    /* background-color: orange; */
+    /* display: flex; */
+    gap: 10px;
+    /* grid-area: notice; */
+}
 
-    grid-area: notice;
+.main-notice .notice-list {
+    width: 100%;
+}
+
+.main-notice .notice-list > li {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.notice-list .notice-num {
+    margin: 0 10px;
+}
+
+.notice-list .notice-title {
+    width: 100%;
+}
+
+.notice-list .notice-time {
+    margin: 0 20px;
 }
 
 /* ------ popular quiz ------ */
 .main-pop-quiz {
+    width: 100%;
     padding: 20px;
-    /* background-color: aqua; */
+    /* grid-area: pquiz; */
+}
 
-    grid-area: pquiz;
+.thumbnail-box {
+    margin: 15px;
+}
+
+.pquiz-list {
+    width: 288px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 288px;
+}
+
+.pquiz-list > li, .pquiz-thumbnail {
+    border: 1px solid #767676;
+    border-radius: 5px;
+}
+
+.pquiz-list > li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pquiz-thumbnail {
+    width: 100%;
+    aspect-ratio: 288/196;
+    object-fit: cover;
+}
+
+.pquiz-title {
+    margin: 0 20px 15px 20px;
 }
 
 /* ------ popular post ------ */
 .main-pop-post {
+    width: 100%;
     padding: 20px;
     /* background-color: beige; */
 
     grid-area: ppost;
 }
 
+.main-pop-post .ppost-list {
+    width: 100%;
+}
+
+.main-pop-post .ppost-list > li {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.ppost-list .ppost-num {
+    margin: 0 10px;
+}
+
+.ppost-list .ppost-title {
+    width: 100%;
+}
+
+.ppost-list .ppost-view {
+    margin: 0 20px;
+}
+
 
 /* ------ media query ------ */
 /* 749px부터 적용 */
 @media (min-width: 749px) {
-    .main-wrapper {
-        grid-template-areas:
-        "notice notice"
-        "pquiz ppost"
-        ;
-    }
 }
 
 /* 748까지 적용 */
 @media (max-width: 749px) {
-    .main-wrapper {
-        grid-template-areas:
-        "notice"
-        "pquiz"
-        "ppost"
-        ;
+    .notice-list .notice-time {
+        display: none;
+    }
+
+    .ppost-list .ppost-view {
+        display: none;
     }
 }
