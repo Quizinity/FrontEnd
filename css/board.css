@@ -1,0 +1,274 @@
+/* ------ reset css ------ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ------ 말줄임 표시 ------ */
+/* .ell1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+/* ------ board wrap ------ */
+.board-wrap {
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* ------ board title ------ */
+.board-title {
+    margin: 20px;
+}
+
+.board-title strong {
+    font-size: 2rem;
+}
+
+.board-title p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+/* ------ board list ------ */
+.board-list {
+    width: 100%;
+    border-top: 2px solid #291c55;
+}
+
+.board-list > div {
+    border-bottom: 1px solid #ddd;
+    /* font-size: 0; */
+}
+
+.board-list > div.board-list-top {
+    border-bottom: 1px solid #999;
+}
+
+.board-list > div:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.board-list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.board-list .board-list-top {
+    font-weight: bold;
+}
+
+.board-list .board-list-num {
+    width: 10%;
+}
+
+.board-list .board-list-title {
+    width: 50%;
+    text-align: left;
+}
+
+.board-list .board-list-top .board-list-title {
+    text-align: center;
+}
+
+.board-list .board-list-writer {
+    width: 15%;
+}
+
+.board-list .board-list-date {
+    width: 10%;
+}
+
+.board-list .board-list-view {
+    width: 10%;
+    text-align: right;
+}
+
+/* ------ board view ------ */
+.board-view {
+    width: 100%;
+    border-top: 2px solid #291c55;
+}
+
+.board-view .board-list-title {
+    padding: 20px 15px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.board-view .board-list-info {
+    padding: 15px;
+    border-bottom: 1px solid #999;
+    font-size: 0;
+}
+
+.board-view .board-list-info dl {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    /* background-color: pink; */
+}
+
+.board-view .board-list-info dl:first-child {
+    padding-left: 0;
+}
+
+.board-view .board-list-info dl::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 17px;
+    background-color: #ddd;
+}
+
+.board-view .board-list-info dl:first-child::before {
+    display: none;
+}
+
+.board-view .board-list-info dl dt,
+.board-view .board-list-info dl dd {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.board-view .board-list-info dl dd {
+    margin-left: 40px;
+    color: #777;
+}
+
+.board_view .cont {
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    line-height: 160%;
+    font-size: 1.4rem;
+}
+
+/* ------ board page ------ */
+.board-page {
+    /* margin: 0 auto; */
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.board-page a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    /* border: 1px solid #ddd; */
+    border-left: 0;
+    line-height: 100%;
+    text-align: center;
+}
+
+.board-page a.bd-btn {
+    padding-top: 10px;
+    font-size: 1rem;
+    letter-spacing: -1px;
+}
+
+.board-page a.bd-num {
+    padding-top: 9px;
+    font-size: 1rem;
+}
+
+.board-page a.bd-num.bd-on {
+    border-radius: 5px;
+    border-color: #291c55;
+    background: #291c55;
+    color: #fff;
+}
+
+/* ------ board button wrap ------ */
+.bd-btn-wrap {
+    margin-top: 20px;
+    text-align: center;
+    /* font-size: 0; */
+}
+
+.bd-btn-wrap a {
+    display: inline-block;
+    min-width: 80px;
+    padding: 10px;
+    border: 1px solid #291c55;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.bd-btn-wrap a:first-child {
+    margin-left: 0;
+}
+
+.bd-btn-wrap a.bd-on {
+    background: #291c55;
+    color: #fff;
+}
+
+/* ------ media queary ------ */
+/* 748까지 적용 */
+@media (max-width: 749px) {
+
+    .board-list > div > .board-list-num {
+        display: none;
+    }
+
+    .board-list > div > .board-list-writer {
+        display: none;
+    }
+
+    .board-list > div > .board-list-date {
+        display: none;
+    }
+
+    .board-list > div > .board-list-view {
+        display: none;
+    }
+
+    .board-list > div > .board-list-title {
+        width: 100%;
+    }
+
+    .board-list > .board-list-top > .board-list-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .board-title > p {
+        display: none;
+    }
+
+    .board-page a {
+        width: 26px;
+        height: 26px;
+    }
+
+    .board-page a.bd-btn {
+        padding-top: 7px;
+    }
+    
+    .board-page a.bd-num {
+        padding-top: 6px;
+    }
+}
