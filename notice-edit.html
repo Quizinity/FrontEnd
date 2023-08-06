@@ -71,35 +71,52 @@
         </div>
         <div class="board-list-wrap">
             <div class="board-view">
+                <!-- <div class="board-category">
+                    <label for="category">카테고리</label>
+                    <select id="category">
+                        <option>퀴즈게시판</option>
+                        <option>자유게시판</option>
+                    </select>
+                </div> -->
                 <div class="board-list-title">
-                    공지사항 제목이 들어갑니다.
+                    <strong>공지사항</strong>
                 </div>
-                <div class="board-list-info">
-                    <dl>
-                        <dt>번호</dt>
-                        <dd>1</dd>
-                    </dl>
-                    <dl>
-                        <dt>글쓴이</dt>
-                        <dd>운영자</dd>
-                    </dl>
-                    <dl>
-                        <dt>작성일</dt>
-                        <dd>2023.08.01</dd>
-                    </dl>
-                    <dl>
-                        <dt>조회</dt>
-                        <dd>50</dd>
-                    </dl>
+                <div class="board-write-wrap">
+                    <div class="board-write">
+                        <div class="board-list-title">
+                            <dl>
+                                <dt>제목</dt>
+                                <dd><input type="text" placeholder="제목 입력" value="글 제목이 들어갑니다"></dd>
+                            </dl>
+                        </div>
+                        <div class="board-list-info">
+                            <dl>
+                                <dt>글쓴이</dt>
+                                <dd><input type="text" placeholder="글쓴이 입력" value="김이름"></dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호</dt>
+                                <dd><input type="password" placeholder="비밀번호 입력" value="1234"></dd>
+                            </dl>
+                        </div>
+                        <div class="board-write-content">
+                            <textarea placeholder="내용 입력">
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="bd-btn-wrap">
+                        <a href="./notice-view.html" class="bd-on">수정</a>
+                        <a href="./notice-view.html">취소</a>
+                    </div>
                 </div>
-                <div class="board-list-content">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione delectus quae quasi dolorum cumque cupiditate soluta! Nihil ipsam modi earum. Unde quos blanditiis quia voluptatum magni voluptas totam necessitatibus at?<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti provident deleniti hic? Eveniet iusto consequuntur necessitatibus accusantium consectetur eaque cum exercitationem animi autem, in, cumque reiciendis alias architecto, quisquam corporis!
-                </div>
-            </div>
-            <div class="bd-btn-wrap">
-                <a href="./notice.html" class="bd-on">목록</a>
-                <a href="./notice-edit.html">수정</a>
             </div>
         </div>
     </div>
