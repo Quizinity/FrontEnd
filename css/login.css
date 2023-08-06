@@ -253,6 +253,10 @@ button:enabled {
     justify-content: space-between;
 }
 
+.login-link {
+    margin-bottom: 30px;
+}
+
 .login-link img {
     height: 16px;
     vertical-align: middle;
