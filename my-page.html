@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>마이페이지 | QUIZINITY</title>
+
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/menubar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mypage.css">
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="images/x-icon">
+
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="max-width">
+            <!-- menu-nav -->
+            <nav class="menu-nav">
+                <form class="menu-group">
+                    <input type="text" placeholder="Search">
+                    <div class="menu-search"></div>
+                </form>
+        
+                <a href="./index.html" class="logo"><img src="./images/LOGO.png"></a>
+        
+                <div class="toggle">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- aside -->
+    <aside class="menu-aside">
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li><a href="./notice.html"><i class="fa-solid fa-star"></i> 공지사항</a></li>
+            <li><a href="#"><i class="fa-solid fa-rocket"></i> 인기퀴즈</a></li>
+            <li><a href="#"><i class="fa-solid fa-fire"></i> 인기게시글</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question"></i> 퀴즈게시판</a></li>
+            <li><a href="#"><i class="fa-solid fa-square-pen"></i> 자유게시판</a></li>
+            <li><a href="./my-page.html"><i class="fa-solid fa-circle-user"></i> 마이페이지</a></li>
+        </ul>
+
+        <div class="aside-signin">
+            <a href="./login.html" class="signin-login">로그인</a>
+            <span>|</span>
+            <a href="./join.html" class="signin-join">회원가입</a>
+        </div>
+    </aside>
+    
+    <!-- main -->
+    <div class="main-wrapper max-width">
+        
+        <div class="my-page-box"> 
+            <div class="user-info">
+                <h3 class="info-title">내 정보</h3>
+                <ul class="info-box">
+                    <li class="info-name">
+                        <div class="info-li-box">
+                            <div class="content-title">이름</div>
+                            <div class="content">김이름</div>
+                        </div>
+                    </li>
+                    <li class="info-email">
+                        <div class="info-li-box">
+                            <div class="content-title">이메일</div>
+                            <div class="content">abc123@email.com</div>
+                        </div>
+                    </li>
+                    <li class="info-num">
+                        <div class="info-li-box">
+                            <div class="content-title">전화번호</div>
+                            <div class="content">010-1234-5678</div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <strong class="edit-info"><a href="#">정보 변경하기</a></strong> -->
+                <!-- 이름 / 이메일 / 전화번호 -->
+            </div>
+            <hr>
+            <div class="user-info">
+                <h3 class="info-title">커뮤니티</h3>
+                <ul class="community-trace">
+                    <li>
+                        <div class="icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="content">내가 쓴 글</div>
+                        <div class="count">50</div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <div class="content">내가 쓴 댓글</div>
+                        <div class="count">50</div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="content">내가 누른 좋아요</div>
+                        <div class="count">50</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        &copy; QUIZINITY 2023 GREENBEE
+    </footer>
+
+</body>
+
+</html>
