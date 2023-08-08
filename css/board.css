@@ -373,6 +373,15 @@ a {
         background-color: #fff;
     }
 
+    .board-header .loveit {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 50px;
+        color: #291c55;
+        transition: 0.3s;
+        cursor: pointer;
+    }
 }
 
 /* 280까지 적용 */
