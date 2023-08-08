@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>마이페이지 | QUIZINITY</title>
+    <title>퀴즈게시판 | QUIZINITY</title>
 
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/menubar.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/mypage.css">
+    <link rel="stylesheet" href="./css/board.css">
 
     <!-- fabicon -->
     <link rel="shortcut icon" href="./icons/favicon.ico" type="images/x-icon">
@@ -63,64 +63,50 @@
         </div>
     </aside>
     
-    <!-- main -->
-    <div class="main-wrapper max-width">
-        
-        <div class="my-page-box"> 
-            <div class="user-info">
-                <h3 class="info-title">내 정보</h3>
-                <ul class="info-box">
-                    <li class="info-name">
-                        <div class="info-li-box">
-                            <div class="content-title">이름</div>
-                            <div class="content">김이름</div>
-                        </div>
-                    </li>
-                    <li class="info-email">
-                        <div class="info-li-box">
-                            <div class="content-title">이메일</div>
-                            <div class="content">abc123@email.com</div>
-                        </div>
-                    </li>
-                    <li class="info-num">
-                        <div class="info-li-box">
-                            <div class="content-title">전화번호</div>
-                            <div class="content">010-1234-5678</div>
-                        </div>
-                    </li>
-                </ul>
-                <!-- <strong class="edit-info"><a href="#">정보 변경하기</a></strong> -->
-                <!-- 이름 / 이메일 / 전화번호 -->
+    <!-- board -->
+    <div class="board-wrap max-width">
+        <div class="board-header">
+            <div class="board-title">
+                <strong>퀴즈게시판</strong>
+                <p>QUIZINITY 퀴즈게시판입니다.</p>
             </div>
-            <hr>
-            <div class="user-info">
-                <h3 class="info-title">커뮤니티</h3>
-                <ul class="community-trace">
-                    <li>
-                        <div class="icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div class="content">내가 쓴 글</div>
-                        <div class="count">50</div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <i class="fas fa-comment"></i>
-                        </div>
-                        <div class="content">내가 쓴 댓글</div>
-                        <div class="count">50</div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <div class="content">내가 누른 좋아요</div>
-                        <div class="count">50</div>
-                    </li>
-                </ul>
+            <div class="loveit">
+                <i class="fas fa-heart"></i>
             </div>
         </div>
-
+        <div class="board-list-wrap">
+            <div class="board-view">
+                <div class="board-list-title">
+                    게시글 제목이 들어갑니다.
+                </div>
+                <div class="board-list-info">
+                    <dl>
+                        <dt>번호</dt>
+                        <dd>1</dd>
+                    </dl>
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd>김이름</dd>
+                    </dl>
+                    <dl>
+                        <dt>작성일</dt>
+                        <dd>2023.08.01</dd>
+                    </dl>
+                    <dl>
+                        <dt>조회</dt>
+                        <dd>50</dd>
+                    </dl>
+                </div>
+                <div class="board-list-content">
+                    퀴즈게시판Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione delectus quae quasi dolorum cumque cupiditate soluta! Nihil ipsam modi earum. Unde quos blanditiis quia voluptatum magni voluptas totam necessitatibus at?<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti provident deleniti hic? Eveniet iusto consequuntur necessitatibus accusantium consectetur eaque cum exercitationem animi autem, in, cumque reiciendis alias architecto, quisquam corporis!
+                </div>
+            </div>
+            <div class="bd-btn-wrap">
+                <a href="./quiz-board.html" class="bd-on">목록</a>
+                <a href="./quiz-board-edit.html">수정</a>
+            </div>
+        </div>
     </div>
     
     <!-- footer -->
