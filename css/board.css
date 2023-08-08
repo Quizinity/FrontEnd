@@ -350,3 +350,14 @@ a {
     }
 
 }
+
+/* 280까지 적용 */
+@media (max-width: 281px) {
+    .board-page .bd-num {
+        display: none;
+    }
+
+    .board-page .bd-on {
+        display: inline-block;
+    }
+}
