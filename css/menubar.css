@@ -105,8 +105,9 @@ body:has(.nav-toggle:checked) .menu-bar:nth-of-type(3) {
 }
 
 .logo img {
-    width: 130px;
+    width: 100px;
     height: auto;
+    transform: translateY(10%);
 }
 
 .menu-group > input {
