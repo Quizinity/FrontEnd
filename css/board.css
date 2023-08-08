@@ -340,4 +340,13 @@ a {
     .board-page a.bd-num {
         padding-top: 6px;
     }
+
+    .board-list-info {
+        display: none;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
 }
