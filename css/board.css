@@ -319,6 +319,156 @@ a {
     color: #fff;
 }
 
+/* ------ thumbnail ------ */
+.box-file-input {
+    margin: 20px;
+}
+
+.box-file-input strong {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #291c55;
+}
+
+.box-file-input label{
+	display:inline-block;
+    border-radius: 5px;
+	background-color:#291c55;
+	color:#fff;
+	padding:0px 15px;
+	line-height:35px;
+	cursor:pointer;
+}
+
+.box-file-input label:after{
+	content:"파일등록";
+}
+
+.box-file-input .file-input{
+	display:none;
+}
+
+.box-file-input .filename{
+	display:inline-block;
+	padding-left:10px;
+}
+
+
+/* ------ quiz ------ */
+.quiz-box {
+    width: fit-content;
+    margin: 20px auto;
+    /* border: 1px solid red; */
+}
+
+.board-quiz-content {
+    width: fit-content;
+}
+
+.one-question {
+    text-align: center;
+    width: fit-content;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: fit-content;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group-text {
+    color: #291c55;
+    width: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.input-form,.input-form-answer {
+    border-left: 1px solid #ccc;
+    width: 300px;
+    padding: 0 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.input-form-answer {
+    width: 380px;
+}
+
+.input-btn:first-of-type {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.input-btn {
+    width: 40px;
+    fill: #291c55;
+}
+
+.input-btn:hover {
+    background-color: #291c55;
+    fill: #fff;
+}
+
+.add-quiz {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #291c55;
+    fill: #fff;
+    display: block;
+    margin: 20px auto;
+}
+
+.add-quiz svg {
+    width: 50px;
+    height: 50px;
+}
+
+/* ------ quiz board list ------ */
+.quiz-board-list {
+    min-width: 288px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink; */
+    margin: 20px auto;
+}
+
+.thumbnail-box {
+    margin: 15px;
+}
+
+.quiz-board-list > li, .pquiz-thumbnail {
+    border: 1px solid #767676;
+    border-radius: 5px;
+}
+
+.quiz-board-list > li {
+    width: 288px;
+    margin-bottom: 10px;
+}
+
+.pquiz-thumbnail {
+    width: 100%;
+    aspect-ratio: 288/196;
+    object-fit: cover;
+}
+
+.pquiz-title {
+    margin: 0 20px 15px 20px;
+}
+
 /* ------ media queary ------ */
 /* 748까지 적용 */
 @media (max-width: 749px) {

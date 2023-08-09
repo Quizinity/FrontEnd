@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>퀴즈게시판 | QUIZINITY</title>
+
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/menubar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/board.css">
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="images/x-icon">
+
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="max-width">
+            <!-- menu-nav -->
+            <nav class="menu-nav">
+                <form class="menu-group">
+                    <input type="text" placeholder="Search">
+                    <div class="menu-search"></div>
+                </form>
+        
+                <a href="./index.html" class="logo"><img src="./images/LOGO.png"></a>
+        
+                <div class="toggle">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- aside -->
+    <aside class="menu-aside">
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li><a href="./notice.html"><i class="fa-solid fa-star"></i> 공지사항</a></li>
+            <li><a href="#"><i class="fa-solid fa-rocket"></i> 인기퀴즈</a></li>
+            <li><a href="#"><i class="fa-solid fa-fire"></i> 인기게시글</a></li>
+            <li><a href="./quiz-board.html"><i class="fa-solid fa-circle-question"></i> 퀴즈게시판</a></li>
+            <li><a href="./free-bulletin-board.html"><i class="fa-solid fa-square-pen"></i> 자유게시판</a></li>
+            <li><a href="./my-page.html"><i class="fa-solid fa-circle-user"></i> 마이페이지</a></li>
+        </ul>
+
+        <div class="aside-signin">
+            <a href="./login.html" class="signin-login">로그인</a>
+            <span>|</span>
+            <a href="./join.html" class="signin-join">회원가입</a>
+        </div>
+    </aside>
+    
+    <!-- board -->
+    <div class="board-wrap max-width">
+        <div class="board-title">
+            <strong>퀴즈게시판</strong>
+            <p>QUIZINITY 퀴즈게시판입니다.</p>
+        </div>
+        <div class="board-list-wrap">
+            <div class="board-view">
+                <!-- <div class="board-category">
+                    <label for="category">카테고리</label>
+                    <select id="category">
+                        <option value="normalquiz">일반퀴즈</option>
+                        <option value="yesORnoquiz">네/아니오 퀴즈</option>
+                        <option value="openendquiz">오픈 엔드 퀴즈</option>
+                        <option value="oneanswerquiz">단일 정답 객관식 퀴즈</option>
+                        <option value="multianswerquiz">다수 정답 객관식 퀴즈</option>
+                    </select>
+                </div> -->
+                <div class="board-list-title">
+                    <strong>퀴즈게시판</strong>
+                </div>
+                <div class="board-write-wrap">
+                    <div class="board-write">
+                        <div class="board-write-title">
+                            <dl>
+                                <dt>제목</dt>
+                                <dd><input type="text" placeholder="제목 입력"></dd>
+                            </dl>
+                        </div>
+                        <div class="board-write-info">
+                            <dl>
+                                <dt>글쓴이</dt>
+                                <dd><input type="text" placeholder="김이름" readonly></dd>
+                            </dl>
+                        </div>
+                        <div class="board-write-content">
+                            
+                            <div class="quiz-box">
+                                <div class="one-question">
+                                    <div class="input-group">
+                                        <div class="input-group-text">
+                                            Q1
+                                        </div>
+                                        <input class="input-form" maxlength="100px" placeholder="질문을 입력하세요"></input>
+                                        <button class="input-btn">
+                                            <svg baseProfile="tiny" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Guides__x26__Forms"/><g id="Icons"><g><polygon points="22.186,10.52 14.054,18.652 9.814,14.411 8.4,15.825 14.054,21.48 23.6,11.934   "/></g></g></svg>
+                                        </button>
+                                        <button class="input-btn">
+                                            <svg baseProfile="tiny" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Guides__x26__Forms"/><g id="Icons"><polygon points="21.657,8.929 16,14.586 10.343,8.929 8.929,10.343 14.586,16 8.929,21.657 10.343,23.071 16,17.414 21.657,23.071    23.071,21.657 17.414,16 23.071,10.343  "/></g></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        A
+                                    </div>
+                                    <input class="input-form-answer" maxlength="100"></input>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        B
+                                    </div>
+                                    <input class="input-form-answer" maxlength="100"></input>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        C
+                                    </div>
+                                    <input class="input-form-answer" maxlength="100"></input>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        D
+                                    </div>
+                                    <input class="input-form-answer" maxlength="100"></input>
+                                </div>
+                            </div>
+                            <div class="quiz-box">
+                                <div class="one-question">
+                                    <div class="input-group">
+                                        <div class="input-group-text">
+                                            Q2
+                                        </div>
+                                        <input class="input-form" maxlength="100px" placeholder="질문을 입력하세요"></input>
+                                        <button class="input-btn">
+                                            <svg baseProfile="tiny" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Guides__x26__Forms"/><g id="Icons"><g><polygon points="22.186,10.52 14.054,18.652 9.814,14.411 8.4,15.825 14.054,21.48 23.6,11.934   "/></g></g></svg>
+                                        </button>
+                                        <button class="input-btn">
+                                            <svg baseProfile="tiny" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Guides__x26__Forms"/><g id="Icons"><polygon points="21.657,8.929 16,14.586 10.343,8.929 8.929,10.343 14.586,16 8.929,21.657 10.343,23.071 16,17.414 21.657,23.071    23.071,21.657 17.414,16 23.071,10.343  "/></g></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        A
+                                    </div>
+                                    <input class="input-form-answer" maxlength="100"></input>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        B
+                                    </div>
+                                    <input class="input-form-answer" maxlength="100"></input>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        C
+                                    </div>
+                                    <input class="input-form-answer" maxlength="100"></input>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        D
+                                    </div>
+                                    <input class="input-form-answer" maxlength="100"></input>
+                                </div>
+                            </div>
+                            <button class="add-quiz">
+                                <svg enable-background="new 0 0 80 80" height="80px" id="Icons" version="1.1" viewBox="0 0 80 80" width="80px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="61,37 43,37 43,19 37,19 37,37 19,37 19,43 37,43 37,61 43,61 43,43 61,43 "/></svg>
+                            </button>
+
+                            <div class="box-file-input">
+                                <strong>▼ 썸네일로 사용할 사진이나 그림을 업로드해주세요</strong>
+                                <label>
+                                    <input type="file" name="ev_display" class="file-input" accept="image/*">
+                                </label>
+                                <span class="filename">
+                                    파일을 선택해주세요.
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bd-btn-wrap">
+                        <a href="./free-bulletin-board-view.html" class="bd-on">등록</a>
+                        <a href="./free-bulletin-board.html">취소</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        &copy; QUIZINITY 2023 GREENBEE
+    </footer>
+
+    <script>
+        
+	$(document).on("change", ".file-input", function(){
+    
+        $filename = $(this).val();
+
+        if($filename == "")
+            $filename = "파일을 선택해주세요.";
+
+        $(".filename").text($filename);
+
+    })
+    </script>
+
+</body>
+
+</html>
