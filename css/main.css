@@ -199,4 +199,8 @@ button:enabled {
     .ppost-list .ppost-view {
         display: none;
     }
+
+    .main-wrapper {
+        margin-left: 9%;
+    }
 }
