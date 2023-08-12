@@ -81,6 +81,20 @@
     color: #767676;
 }
 
+.commu-btn {
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.my-comment-box {
+    background-color: #fff;
+    width: 100%;
+}
+
 /* ------ media guery ------ */
 @media (max-width: 748px) {
     .my-page-box {
