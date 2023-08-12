@@ -555,6 +555,53 @@ a {
         transition: 0.3s;
         cursor: pointer;
     }
+
+    .quiz-container {
+        width: 100%;
+        transform: translateX(-10px);
+    }
+
+    .input-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* .input-question {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+    } */
+
+    .quiz-container .one-question .input-group .input-form {
+        width: 90%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+        /* border: 1px solid red; */
+    }
+
+    .input-form-answer {
+        width: 80%;
+        height: 100%;
+        border: none;
+    }
+
+    .quiz-container .one-question,
+    .quiz-container .one-question .input-group {
+        width: 100%;
+    }
+
+    .input-group .text-question {
+        display: none;
+    }
+
+    .input-group-text {
+        width: 10%;
+        margin: 10px 0;
+    }
 }
 
 /* 280까지 적용 */
