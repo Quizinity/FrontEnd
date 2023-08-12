@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>인기퀴즈 | QUIZINITY</title>
+
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/menubar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/board.css">
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="images/x-icon">
+
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="max-width">
+            <!-- menu-nav -->
+            <nav class="menu-nav">
+                <form class="menu-group">
+                    <input type="text" placeholder="Search">
+                    <div class="menu-search"></div>
+                </form>
+        
+                <a href="./index.html" class="logo"><img src="./images/LOGO.png"></a>
+        
+                <div class="toggle">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- aside -->
+    <aside class="menu-aside">
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li><a href="./notice.html"><i class="fa-solid fa-star"></i> 공지사항</a></li>
+            <li><a href="./pop-quiz-board.html"><i class="fa-solid fa-rocket"></i> 인기퀴즈</a></li>
+            <li><a href="./pop-free-board.html"><i class="fa-solid fa-fire"></i> 인기게시글</a></li>
+            <li><a href="./quiz-board.html"><i class="fa-solid fa-circle-question"></i> 퀴즈게시판</a></li>
+            <li><a href="./free-bulletin-board.html"><i class="fa-solid fa-square-pen"></i> 자유게시판</a></li>
+            <li><a href="./my-page.html"><i class="fa-solid fa-circle-user"></i> 마이페이지</a></li>
+        </ul>
+
+        <div class="aside-signin">
+            <a href="./login.html" class="signin-login">로그인</a>
+            <span>|</span>
+            <a href="./join.html" class="signin-join">회원가입</a>
+        </div>
+    </aside>
+    
+    <!-- board -->
+    <div class="board-wrap max-width">
+        <div class="board-header">
+            <div class="board-title">
+                <strong>인기퀴즈</strong>
+                <p>QUIZINITY 인기퀴즈입니다.</p>
+            </div>
+            <div class="loveit">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        <div class="board-list-wrap">
+            <div class="board-view">
+                <div class="board-list-title">
+                    게시글 제목이 들어갑니다.
+                </div>
+                <div class="board-list-info">
+                    <dl>
+                        <dt>번호</dt>
+                        <dd>1</dd>
+                    </dl>
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd>김이름</dd>
+                    </dl>
+                    <dl>
+                        <dt>작성일</dt>
+                        <dd>2023.08.01</dd>
+                    </dl>
+                    <dl>
+                        <dt>조회</dt>
+                        <dd>50</dd>
+                    </dl>
+                    <dl>
+                        <dt>좋아요</dt>
+                        <dd>49</dd>
+                    </dl>
+                </div>
+                <div class="board-list-content">
+                    <div class="quiz-board-content">
+                        <div class="board-thumbnail"></div>
+                        <div class="quiz-box quiz-container quiz-container">
+                            <div class="one-question">
+                                <div class="input-group">
+                                    <div class="input-group-text text-question">
+                                        Q1
+                                    </div>
+                                    <input class="input-form input-question" placeholder="질문을 입력하세요"></input>
+                                </div>
+                            </div>
+                            <div class="input-group answer-option">
+                                <div class="input-group-text">
+                                    A
+                                </div>
+                                <input class="input-form-answer"></input>
+                            </div>
+                            <div class="input-group answer-option">
+                                <div class="input-group-text">
+                                    B
+                                </div>
+                                <input class="input-form-answer"></input>
+                            </div>
+                            <div class="input-group answer-option">
+                                <div class="input-group-text">
+                                    C
+                                </div>
+                                <input class="input-form-answer"></input>
+                            </div>
+                            <div class="input-group answer-option">
+                                <div class="input-group-text">
+                                    D
+                                </div>
+                                <input class="input-form-answer"></input>
+                            </div>
+                        </div>
+                        <div class="quiz-box quiz-container">
+                            <div class="one-question">
+                                <div class="input-group">
+                                    <div class="input-group-text text-question">
+                                        Q2
+                                    </div>
+                                    <input class="input-form input-question" placeholder="질문을 입력하세요"></input>
+                                </div>
+                            </div>
+                            <div class="input-group answer-option">
+                                <div class="input-group-text">
+                                    A
+                                </div>
+                                <input class="input-form-answer"></input>
+                            </div>
+                            <div class="input-group answer-option">
+                                <div class="input-group-text">
+                                    B
+                                </div>
+                                <input class="input-form-answer"></input>
+                            </div>
+                            <div class="input-group answer-option">
+                                <div class="input-group-text">
+                                    C
+                                </div>
+                                <input class="input-form-answer"></input>
+                            </div>
+                            <div class="input-group answer-option">
+                                <div class="input-group-text">
+                                    D
+                                </div>
+                                <input class="input-form-answer"></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bd-btn-wrap">
+                <a href="./pop-quiz-board.html" class="bd-on">목록</a>
+                <a href="./pop-quiz-board-edit.html">수정</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        &copy; QUIZINITY 2023 GREENBEE
+    </footer>
+
+</body>
+
+</html>
