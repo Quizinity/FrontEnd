@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>마이페이지 | QUIZINITY</title>
+
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/menubar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mypage.css">
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="images/x-icon">
+
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="max-width">
+            <!-- menu-nav -->
+            <nav class="menu-nav">
+                <form class="menu-group">
+                    <input type="text" placeholder="Search">
+                    <div class="menu-search"></div>
+                </form>
+        
+                <a href="./index.html" class="logo"><img src="./images/LOGO.png"></a>
+        
+                <div class="toggle">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- aside -->
+    <aside class="menu-aside">
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li><a href="./notice.html"><i class="fa-solid fa-star"></i> 공지사항</a></li>
+            <li><a href="./pop-quiz-board.html"><i class="fa-solid fa-rocket"></i> 인기퀴즈</a></li>
+            <li><a href="./pop-free-board.html"><i class="fa-solid fa-fire"></i> 인기게시글</a></li>
+            <li><a href="./quiz-board.html"><i class="fa-solid fa-circle-question"></i> 퀴즈게시판</a></li>
+            <li><a href="./free-bulletin-board.html"><i class="fa-solid fa-square-pen"></i> 자유게시판</a></li>
+            <li><a href="./my-page.html"><i class="fa-solid fa-circle-user"></i> 마이페이지</a></li>
+        </ul>
+
+        <div class="aside-signin">
+            <a href="./login.html" class="signin-login">로그인</a>
+            <span>|</span>
+            <a href="./join.html" class="signin-join">회원가입</a>
+        </div>
+    </aside>
+    
+    <!-- main -->
+    <div class="main-wrapper max-width">
+        
+            <!-- 퀴즈게시글 -->
+        <div class="main-pop-quiz">
+            <h2 class="main-title">퀴즈게시글 좋아요</h2>
+            <ul class="pquiz-list">
+                <li>
+                    <article class="pquiz-section">
+                        <a href="./quiz-board-view.html">
+                            <div class="thumbnail-box"><img class="pquiz-thumbnail" src="./images/ex-content.jpg" alt=""></img></div>
+                            <div class="pquiz-title">
+                                <p class="ell1">게시글 제목
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ullam asperiores odio facere commodi quas ex laudantium cum aperiam fugiat, necessitatibus ab libero dignissimos porro pariatur temporibus voluptate neque sequi.
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="pquiz-section">
+                        <a href="./quiz-board-view.html">
+                            <div class="thumbnail-box"><img class="pquiz-thumbnail" src="./images/ex-content.jpg" alt=""></img></div>
+                            <div class="pquiz-title">
+                                <p class="ell1">게시글 제목
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ullam asperiores odio facere commodi quas ex laudantium cum aperiam fugiat, necessitatibus ab libero dignissimos porro pariatur temporibus voluptate neque sequi.
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="pquiz-section">
+                        <a href="./quiz-board-view.html">
+                            <div class="thumbnail-box"><img class="pquiz-thumbnail" src="./images/ex-content.jpg" alt=""></img></div>
+                            <div class="pquiz-title">
+                                <p class="ell1">게시글 제목
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ullam asperiores odio facere commodi quas ex laudantium cum aperiam fugiat, necessitatibus ab libero dignissimos porro pariatur temporibus voluptate neque sequi.
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="pquiz-section">
+                        <a href="./quiz-board-view.html">
+                            <div class="thumbnail-box"><img class="pquiz-thumbnail" src="./images/ex-content.jpg" alt=""></img></div>
+                            <div class="pquiz-title">
+                                <p class="ell1">게시글 제목
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ullam asperiores odio facere commodi quas ex laudantium cum aperiam fugiat, necessitatibus ab libero dignissimos porro pariatur temporibus voluptate neque sequi.
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 자유게시글 -->
+        <section class="main-pop-post">
+            <h2 class="main-title">자유게시글 좋아요</h2>
+            
+            <ul class="ppost-list">
+                <li>
+                    <div class="ppost-num">
+                        123
+                    </div>
+                    <div class="ppost-title">
+                        <a href="./free-bulletin-board-view.html">게시글 제목</a>
+                    </div>
+                    <div class="ppost-view">
+                        999
+                    </div>
+                </li>
+                <li>
+                    <div class="ppost-num">
+                        252
+                    </div>
+                    <div class="ppost-title">
+                        <a href="./free-bulletin-board-view.html">게시글 제목</a>
+                    </div>
+                    <div class="ppost-view">
+                        105
+                    </div>
+                </li>
+                <li>
+                    <div class="ppost-num">
+                        6521
+                    </div>
+                    <div class="ppost-title">
+                        <a href="./free-bulletin-board-view.html">게시글 제목</a>
+                    </div>
+                    <div class="ppost-view">
+                        59
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <div class="commu-btn">
+            <a href="./my-page.html" class="btn-back">마이페이지로 돌아가기</a>
+            <!--<a href="#">수정</a>-->
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        &copy; QUIZINITY 2023 GREENBEE
+    </footer>
+
+</body>
+
+</html>

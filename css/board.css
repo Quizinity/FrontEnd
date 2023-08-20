@@ -543,6 +543,11 @@ a {
     border-radius: 5px;
 }
 
+.comment-name::after {
+    content: '|';
+    margin: 10px;
+}
+
 /* ------ media queary ------ */
 /* 748까지 적용 */
 @media (max-width: 749px) {
